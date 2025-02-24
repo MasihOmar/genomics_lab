@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="181.0" prefWidth="616.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.genomicslab.controllers.CardController">
+   <children>
+      <AnchorPane layoutY="2.0" prefHeight="179.0" prefWidth="616.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: white;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6842105388641357" green="0.6683723330497742" blue="0.6683723330497742" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="7.0" layoutY="7.0" prefHeight="169.0" prefWidth="602.0" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="card" stylesheets="@basic_style.css">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="93.0" fitWidth="106.0" layoutX="24.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="deleteBtn" layoutX="531.0" layoutY="128.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <FontAwesomeIconView fill="RED" glyphName="TRASH" size="32" />
+               </graphic></Button>
+            <Circle fx:id="circle" fill="WHITE" layoutX="94.0" layoutY="87.0" radius="70.0" stroke="WHITE" strokeType="INSIDE" />
+            <Button fx:id="update" layoutX="495.0" layoutY="128.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <graphic>
+                  <FontAwesomeIconView fill="#586859" glyphName="PENCIL_SQUARE" size="32" />
+               </graphic></Button>
+            <VBox layoutX="227.0" layoutY="11.0" prefHeight="152.0" prefWidth="242.0">
+               <children>
+                  <Label>
+                     <font>
+                        <Font name="Trebuchet MS" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nameField" text="name">
+                     <font>
+                        <Font name="Trebuchet MS Bold Italic" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label>
+                     <font>
+                        <Font name="Trebuchet MS" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="idField" prefHeight="23.0" prefWidth="91.0" text="id">
+                     <font>
+                        <Font name="Trebuchet MS Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="emailField" text="email">
+                     <font>
+                        <Font name="Trebuchet MS" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="phoneField" text="phone">
+                     <font>
+                        <Font name="Trebuchet MS" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dobField" prefHeight="17.0" prefWidth="218.0" />
+               </children>
+            </VBox>
+            <Label fx:id="roleTitle" layoutX="431.0" layoutY="73.0" prefHeight="17.0" prefWidth="156.0">
+               <font>
+                  <Font name="Trebuchet MS Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

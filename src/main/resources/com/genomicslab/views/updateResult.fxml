@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.genomicslab.controllers.UpdateResultController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #ececec;">
+         <children>
+            <Button fx:id="saveBtn" layoutX="242.0" layoutY="441.0" mnemonicParsing="false" onAction="#saveResult" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: #79cee8; -fx-background-radius: 10;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS Italic" size="13.0" />
+               </font></Button>
+            <TextField fx:id="resultId" layoutX="90.0" layoutY="105.0" prefHeight="26.0" prefWidth="209.0" promptText="Result ID" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="Trebuchet MS Italic" size="13.0" />
+               </font></TextField>
+            <JFXComboBox fx:id="patientId" layoutX="101.0" layoutY="182.0" opacity="0.38" prefHeight="26.0" prefWidth="209.0" promptText="Patient ID" unFocusColor="WHITE" />
+            <JFXComboBox fx:id="testId" layoutX="101.0" layoutY="148.0" opacity="0.34" prefHeight="26.0" prefWidth="209.0" promptText="Test ID" unFocusColor="WHITE" />
+            <DatePicker fx:id="resultDate" layoutX="101.0" layoutY="224.0" prefHeight="37.0" prefWidth="216.0" promptText="Result Date" style="-fx-background-color: transparent; -fx-border-color: transparent;" />
+            <TextArea fx:id="resultDetails" layoutX="101.0" layoutY="270.0" prefHeight="117.0" prefWidth="216.0" promptText="Reslult Details" style="-fx-background-color: transparent;" />
+            <Label layoutX="2.0" layoutY="110.0" opacity="0.47" prefHeight="16.0" prefWidth="69.0" text="Result ID:">
+               <font>
+                  <Font name="Trebuchet MS Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="1.0" layoutY="234.0" opacity="0.45" prefHeight="16.0" prefWidth="75.0" text="Result Date:">
+               <font>
+                  <Font name="Trebuchet MS Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="3.0" layoutY="187.0" opacity="0.53" prefHeight="16.0" prefWidth="87.0" text="Patient ID:">
+               <font>
+                  <Font name="Trebuchet MS Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="3.0" layoutY="153.0" opacity="0.49" prefHeight="16.0" prefWidth="69.0" text="Test ID:">
+               <font>
+                  <Font name="Trebuchet MS Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="283.0" opacity="0.43" prefHeight="16.0" prefWidth="107.0" text="Result Details:">
+               <font>
+                  <Font name="Trebuchet MS Italic" size="13.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="195.0" layoutY="131.0" startX="-100.0" stroke="WHITE" />
+            <Text fill="#69787c" fontSmoothingType="LCD" layoutX="104.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Result" wrappingWidth="142.70745849609375">
+               <font>
+                  <Font name="Trebuchet MS Italic" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

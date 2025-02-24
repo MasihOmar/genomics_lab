@@ -1,0 +1,71 @@
+.button {
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Darker Green on hover */
+}
+
+
+.sidebar{
+    -fx-background-color:white;
+    -fx-border-radius: 40px 0px 0px 40px; /* Different radii for each corner */
+    -fx-background-radius: 40px 0px 0px 40px;
+}
+.righ-sidbar{
+    -fx-background-color:white;
+    -fx-border-radius: 0px 40px 40px 0px;
+    -fx-background-radius: 0px 40px 40px 0px;
+
+}
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.scroll-pane{
+    -fx-background-color:transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+
+.card{
+-fx-background-color:linear-gradient(to bottom right,#bee9f6,#dee2e6);
+}
+
+
+
+
+.table-view{
+    -fx-background-color:transparent;
+    /*-fx-border-color:linear-gradient(to bottom right, #272b3f, #256b51);*/
+    -fx-border-radius:8px;
+    -fx-background-radius: 8px;
+    -fx-padding:0px;
+}
+.table-view .table-column{
+    -fx-alignment:CENTER;
+}
+.table-view .column-header-background{
+    /*-fx-background-color:linear-gradient(to bottom right, #272b3f, #256b51);*/
+    -fx-background-color:#9ce1f6;
+    -fx-background-insets: 0 0 0 0;
+    /*-fx-border-color: black;*/
+
+    -fx-border-radius: 8px;
+    /*-f-background-radius:8px 8px 0px 0px;*/
+}
+
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-border-radius: 8px;
+    -fx-size:40px;
+}
+.table-view .column-header .label{
+    -fx-text-fill:white;
+    -fx-font-family:"Trebuchet MS";
+    -fx-font-style: italic; /* Makes the text italic */
+    -fx-font-weight: bold;
+
+}

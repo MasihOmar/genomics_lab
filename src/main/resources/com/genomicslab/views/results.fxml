@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="485.0" prefWidth="688.0" style="-fx-background-color: gray];" stylesheets="@basic_style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.genomicslab.controllers.ResultsController">
+   <children>
+      <TableView fx:id="tableView" layoutY="113.0" prefHeight="371.0" prefWidth="688.0" stylesheets="@basic_style.css">
+         <columns>
+            <TableColumn fx:id="idCol" prefWidth="57.0" text="ID" />
+            <TableColumn fx:id="testIdCol" prefWidth="73.0" text="Test ID" />
+            <TableColumn fx:id="patientIdCol" prefWidth="78.0" text="Patient ID" />
+            <TableColumn fx:id="dateCol" prefWidth="97.0" text="Result Date" />
+            <TableColumn fx:id="detailsCol" prefWidth="263.0" text="Details" />
+            <TableColumn fx:id="editCol" prefWidth="120.0" />
+         </columns>
+      </TableView>
+      <Button fx:id="addTestBtn" layoutX="446.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleAddResultBtnClick" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: GRAY;">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
+         </graphic>
+      </Button>
+      <TextField fx:id="search" layoutX="478.0" layoutY="18.0" onAction="#handleSearch" prefHeight="25.0" prefWidth="181.0" promptText="Search your keyword here!" style="-fx-background-color: transparent;">
+         <effect>
+            <Shadow height="1.0" radius="0.0" width="0.0">
+               <color>
+                  <Color red="0.6710526347160339" green="0.6461988091468811" blue="0.6461988091468811" />
+               </color>
+            </Shadow>
+         </effect>
+         <font>
+            <Font name="Trebuchet MS Bold Italic" size="13.0" />
+         </font>
+      </TextField>
+      <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" layoutX="667.0" layoutY="35.0" />
+      <Line endX="122.1553955078125" endY="7.62939453125E-6" layoutX="554.0" layoutY="48.0" startX="-75.00003051757812" startY="7.62939453125E-6" stroke="WHITE" />
+      <Text fill="#69787c" fontSmoothingType="LCD" layoutX="52.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results" wrappingWidth="182.70745849609375">
+         <font>
+            <Font name="Trebuchet MS Italic" size="41.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

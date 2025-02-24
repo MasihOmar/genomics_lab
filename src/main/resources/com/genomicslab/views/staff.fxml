@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="485.0" prefWidth="688.0" stylesheets="@basic_style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.genomicslab.controllers.StaffController">
+   <children>
+      <HBox alignment="CENTER" layoutX="432.0" layoutY="16.0" prefHeight="33.0" prefWidth="213.0">
+         <children>
+            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#setupAddButton" style="-fx-background-radius: 20; -fx-background-color: Gray;">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PLUS" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="search" alignment="CENTER" prefHeight="26.0" prefWidth="181.0" promptText="Search your keyword here!" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: transparent;">
+               <font>
+                  <Font name="Trebuchet MS Bold Italic" size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <Line endX="88.5" layoutX="587.0" layoutY="49.0" startX="-119.5" stroke="WHITE" />
+      <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" layoutX="655.0" layoutY="37.0" />
+      <HBox layoutX="15.0" layoutY="109.0" prefHeight="373.0" prefWidth="673.0">
+         <children>
+            <ScrollPane fx:id="scroll" prefHeight="373.0" prefWidth="675.0" style="-fx-background-color: transparent;">
+               <content>
+                  <GridPane fx:id="grid" hgap="10.0" vgap="20.0">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <Text fill="#69787c" fontSmoothingType="LCD" layoutX="62.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff" wrappingWidth="182.70745849609375">
+         <font>
+            <Font name="Trebuchet MS Italic" size="41.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
