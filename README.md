@@ -1,2 +1,3 @@
 # genomics-lab
-![Genomics - lab management app](https://github.com/user-attachments/assets/c8ef1d62-5a12-480c-b21d-11dd253c11bd)
+![Cover (3)](https://github.com/user-attachments/assets/5a66eda2-f454-4e49-b150-a2812f44f6b8)
+
